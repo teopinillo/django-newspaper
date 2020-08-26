@@ -25,7 +25,7 @@ SECRET_KEY = 'g!^bwgt(zb1*$s$56b)7n6oh)5vj&h@6jty0z8zd^t(p$go3bn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -121,3 +121,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'users.CustomUser'
+LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'home'
+
