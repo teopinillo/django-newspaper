@@ -11,5 +11,9 @@ class CustomUserCreationForm (UserCreationForm):
 class CustomUserChangeForm( UserChangeForm):
     class Meta:
         model = CustomUser
-        fields = UserChangeForm.Meta.fields
+        #display the default settings of username/password
+        #fields = UserChangeForm.Meta.fields
+
+        #custom fileds to display
+        fields = ('username','email','age',)
 
